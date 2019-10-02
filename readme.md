@@ -16,11 +16,20 @@
     
     POST /api/register
 
+     {
+        "name": "name", 
+        "email": "email@email.com", 
+        "password": "password", 
+        "c_password": "password"   
+    }
+
+    Response
+
     {
         "success": true,
         "data": {
             "token": "token-value",
-            "name": "Mizi"
+            "name": "name"
         },
         "message": "User register successfully."
     }
@@ -29,6 +38,15 @@
 ## Login
 
     POST /oauth/token
+
+    Body
+        username
+        password
+        grant_type
+        client_id
+        client_secret
+
+    Response
 
     {
         "token_type": "Bearer",
@@ -40,6 +58,12 @@
 ## Index
 
     GET /api/products
+
+    Headers
+        Authorization
+        Accept
+    
+    Response
 
     {
         "success": true,
@@ -59,6 +83,16 @@
 
     POST /api/products
 
+    Headers
+        Authorization
+        Accept
+
+    Body
+        name
+        detail
+
+    Response
+
     {
         "success": true,
         "data": {
@@ -73,7 +107,13 @@
 
 ## Show
 
-    GET /api/products/2
+    GET /api/products/{id}
+
+    Headers
+        Authorization
+        Accept
+
+    Response
 
     {
         "success": true,
@@ -91,6 +131,16 @@
 
     PUT /api/products/2?name=NewBook&detail=NewVersion
 
+    Headers
+        Authorization
+        Accept
+
+    String Query
+        name
+        detail
+
+    Response
+
     {
         "success": true,
         "data": {
@@ -105,7 +155,11 @@
 
 ## Delete
 
-    DELETE /api/products/2
+    DELETE /api/products/{id}
+
+    Headers
+        Authorization
+        Accept
 
     {
         "success": true,
