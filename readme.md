@@ -11,6 +11,10 @@
     php artisan migrate
     php artisan passport:install
 
+    or
+
+    use domain name: https://mizi.monster and request client_id & client secret at admin@mizi.monster
+
 
 ## Register
     
