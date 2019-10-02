@@ -1,8 +1,15 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-## About Laravel Restful
+# About Laravel Restful
 
     Domain name: https://mizi.monster
+
+## Installation
+
+    git clone
+    composer update
+    php artisan migrate
+    php artisan passport:install
 
 
 ## Register
