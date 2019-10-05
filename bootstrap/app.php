@@ -1,5 +1,7 @@
 <?php
-
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Credentials: true');
+header('Access-Control-Allow-Headers: content-type, cache-control');
 /*
 |--------------------------------------------------------------------------
 | Create The Application
