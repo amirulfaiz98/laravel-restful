@@ -17,6 +17,8 @@
 
 
 ## Register
+
+    Request
     
     POST /api/register
 
@@ -41,6 +43,8 @@
 
 ## Login
 
+    Request
+
     POST /oauth/token
 
     Body
@@ -60,6 +64,8 @@
     }
 
 ## Index
+
+    Request
 
     GET /api/products
 
@@ -84,6 +90,8 @@
     }
 
 ## Store
+
+    Request
 
     POST /api/products
 
@@ -111,6 +119,8 @@
 
 ## Show
 
+    Request
+
     GET /api/products/{id}
 
     Headers
@@ -132,6 +142,8 @@
     }
 
 ## Update
+
+    Request
 
     PUT /api/products/2?name=NewBook&detail=NewVersion
 
@@ -158,6 +170,8 @@
     }
 
 ## Delete
+
+    Request
 
     DELETE /api/products/{id}
 
